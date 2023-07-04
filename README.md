@@ -1,6 +1,6 @@
 # __Introduction to VHDL__
 
-![Starry Night Logic](../assets/starrynightlogic.jpeg)
+![Starry Night Logic](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/starrynightlogic.jpeg)
 
 ---
 
