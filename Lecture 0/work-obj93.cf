@@ -1,0 +1,4 @@
+v 4
+file . "lecture0.vhdl" "72f19a9798dbb77e43c268b70a29c1aa658594bb" "20230624013648.393":
+  entity lecture0 at 1( 0) + 0 on 11;
+  architecture lecture0_arch of lecture0 at 9( 183) + 0 on 12;

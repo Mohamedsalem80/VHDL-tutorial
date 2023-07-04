@@ -1,0 +1,10 @@
+v 4
+file . "or_gate.vhdl" "132030edd12f64847adb6271649b34dff88d89ec" "20230623221209.320":
+  entity or_gate at 1( 0) + 0 on 15;
+  architecture or_gate_arch of or_gate at 12( 187) + 0 on 16;
+file . "and_gate.vhdl" "3d6d07a51f5b732827d460c101cd49cd4b26cda7" "20230623220628.906":
+  entity and_gate at 1( 0) + 0 on 11;
+  architecture and_gate_arch of and_gate at 12( 189) + 0 on 12;
+file . "not_gate.vhdl" "b45bd29b60a27179a41172254a45bda5e7f47aea" "20230623221152.130":
+  entity not_gate at 1( 0) + 0 on 13;
+  architecture not_gate_arch of not_gate at 11( 163) + 0 on 14;
