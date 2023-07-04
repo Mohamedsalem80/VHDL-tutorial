@@ -53,7 +53,7 @@ d value is determined by a logically ANDing a with b
 e value is determined by a logically ORing d with c
 f is just negation of e
 
-![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/vhdl.jpg)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/vhdl1.jpg)
 
 ---
 
