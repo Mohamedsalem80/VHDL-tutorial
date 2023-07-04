@@ -1,6 +1,6 @@
 # __Introduction to VHDL__
 
-![Starry Night Logic](../assets/starrynightlogic.jpeg)
+![Starry Night Logic](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/starrynightlogic.jpeg)
 
 ---
 
@@ -14,7 +14,7 @@ Drive: https://drive.google.com/drive/folders/19KyYJOgZSFlZfGzc6FWgkRxtoCVd9kQp?
 
 ### __In the previous lectures we implemented the circuits using the method structural implementing. It mean that we implement the structure from gates there is another method Behavioral, which mean we implement the behavior, what will the output be at every state of inputs. We introduce this method. It’s mostly used in sequential circuits which will be our next lecture. Behavioral Implementing depends on the truth table of the circuit. Full Adder using behavioral method:__
 
-![vhdl](../assets/table1.png)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/table1.png)
 
 ```vhdl
 library ieee;
@@ -125,7 +125,7 @@ end fa_tb_arch;
 ```
 
 #### __Visualization__
-![vhdl](../assets/ghdl5.png)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/ghdl5.png)
 As we see it has the same output signal as the combinational.
 
 ---
@@ -165,8 +165,8 @@ In our journey implementing sequential circuits will use behavioral method as it
 
 Starting our journey with the SR flip flop (S: set, R: Reset):
 
-![vhdl](../assets/vhdl5.jpg)
-![vhdl](../assets/table2.png)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/vhdl5.jpg)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/table2.png)
 
 The invalid state happens when the set and the reset are high because the Q and Qbar will be high and that’s not possible the compliment can’t be same as output.
 
@@ -273,6 +273,6 @@ The process0 process is defined next. Inside this process, there is a loop that 
 
 #### __Visualization__
 
-![vhdl](../assets/ghdl6.png)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/ghdl6.png)
 
 The delay in output is because there are no old stored memory to show.

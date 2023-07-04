@@ -1,6 +1,6 @@
 # __Introduction to VHDL__
 
-![Starry Night Logic](../assets/starrynightlogic.jpeg)
+![Starry Night Logic](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/starrynightlogic.jpeg)
 
 ---
 
@@ -220,8 +220,8 @@ end tb_arch;
 ```
 
 #### __Visualization__
-![vhdl](../assets/ghdl7.png)
-![vhdl](../assets/state1.png)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/ghdl7.png)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/state1.png)
 
 ---
 
@@ -397,5 +397,5 @@ end tb_arch;
 
 #### __Visualization__
 
-![vhdl](../assets/ghdl8.png)
-![vhdl](../assets/state2.png)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/ghdl8.png)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/state2.png)

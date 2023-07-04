@@ -1,6 +1,6 @@
 # __Introduction to VHDL__
 
-![Starry Night Logic](../assets/starrynightlogic.jpeg)
+![Starry Night Logic](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/starrynightlogic.jpeg)
 
 ---
 
@@ -17,7 +17,7 @@ Drive: https://drive.google.com/drive/folders/19KyYJOgZSFlZfGzc6FWgkRxtoCVd9kQp?
 ---
 We will fast-forward implementing this circuit as VHDL code and focus on the test bench
 
-![vhdl](../assets/vhdl3.jpg)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/vhdl3.jpg)
 
 ```vhdl
 library ieee;
@@ -223,14 +223,14 @@ Now as we have our entity analyzed, synthesized, and elaborated we do the same f
 
 After running the command a compo_tb.vcd file will be generated open it using vscode after installing WaveTrace extension.
 
-![vhdl](../assets/ghdl1.png)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/ghdl1.png)
 
  
 It will look like this choose add signals and add all the inputs and outputs. Verifying the values of the outputs by eye to the expected we make sure that is correct.
 
-![vhdl](../assets/ghdl2.png)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/ghdl2.png)
 
-![vhdl](../assets/ghdl3.png)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/ghdl3.png)
 
 (Note: as you see it keeps cycling every 40ns and it will stop after 1000ns)
 
@@ -243,8 +243,8 @@ As for Gtkwave. After installing it and setting it up. Open the command line in 
 >
 ```
 
-![vhdl](../assets/thdl1.png)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/thdl1.png)
 
 Drag and drop the signals to show them
 
-![vhdl](../assets/thdl2.png)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/thdl2.png)

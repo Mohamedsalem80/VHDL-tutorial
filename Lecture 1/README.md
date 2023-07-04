@@ -1,6 +1,6 @@
 # __Introduction to VHDL__
 
-![Starry Night Logic](../assets/starrynightlogic.jpeg)
+![Starry Night Logic](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/starrynightlogic.jpeg)
 
 ---
 
@@ -18,7 +18,7 @@ Drive: https://drive.google.com/drive/folders/19KyYJOgZSFlZfGzc6FWgkRxtoCVd9kQp?
 
 ### __1- NOT gate__
 
-![vhdl](../assets/vhdl2-1.jpg)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/vhdl2-1.jpg)
 
 We will start off just by using our libraries
 
@@ -66,7 +66,7 @@ Now let's implement the AND gate
 
 ### __2- AND gate__
 
-![vhdl](../assets/vhdl2-2.jpg)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/vhdl2-2.jpg)
 
 ```vhdl
 ibrary ieee;
@@ -101,7 +101,7 @@ Everything goes the same for the OR gate only replacing the utilization
 
 ### __3- OR gate__
 
-![vhdl](../assets/vhdl2-3.jpg)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/vhdl2-3.jpg)
 
 ```vhdl
 library ieee;

@@ -1,6 +1,6 @@
 # __Introduction to VHDL__
 
-![Starry Night Logic](../assets/starrynightlogic.jpeg)
+![Starry Night Logic](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/starrynightlogic.jpeg)
 
 ---
 
@@ -18,7 +18,7 @@ Drive: https://drive.google.com/drive/folders/19KyYJOgZSFlZfGzc6FWgkRxtoCVd9kQp?
 #### __1- Half Adder__
 The output “s” is the sum of a and b, and “c” is the c is the carry out.
 
-![vhdl](../assets/vhdl4-1.jpg)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/vhdl4-1.jpg)
 
 ```vhdl
 library ieee;
@@ -90,7 +90,7 @@ end ha_tb_arch;
 ```
 
 #### __Visualization__
-![vhdl](../assets/ghdl4.png)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/ghdl4.png)
 
 Now as we implemented the Half Adder there is two ways to implement the Full Adder
 
@@ -100,8 +100,8 @@ Now as we implemented the Half Adder there is two ways to implement the Full Add
 
 - From Boolean Algebra we find the final expression for “sum” and “cout” and implement them.
 
-![vhdl](../assets/vhdl4-2.jpg)
-![vhdl](../assets/vhdl4-3.jpg)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/vhdl4-2.jpg)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/vhdl4-3.jpg)
 
 
 ```vhdl
@@ -136,7 +136,7 @@ Both architecture give the same output.
 
 #### __2.2- Full Adder using the Half Adder__
 
-![vhdl](../assets/vhdl4-4.jpg)
+![vhdl](https://github.com/Mohamedsalem80/VHDL-tutorial/blob/main/assets/vhdl4-4.jpg)
 
 ```vhdl
 library ieee;
