@@ -98,7 +98,6 @@ VHDL follows a structured syntax that consists of entities, architectures, and p
 entity represents the interface or external view of a design component, while an architecture 
 describes its internal implementation. Processes define concurrent actions within an 
 architecture
-
 ```vhdl
 -- specifies that the IEEE library will be used in this code.
 library ieee;
