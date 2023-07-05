@@ -91,7 +91,13 @@ end architecture lecture0_arch;
 ```
 The architecture is named lecture0_arch. The signals d and e are declared within the architecture because they are internal signals. The concurrent statements that describe the gates are placed between the keywords begin and end.
 
-### __code__
+### __Code__
+
+#### __1. Syntax:__
+VHDL follows a structured syntax that consists of entities, architectures, and processes. An 
+entity represents the interface or external view of a design component, while an architecture 
+describes its internal implementation. Processes define concurrent actions within an 
+architecture
 
 ```vhdl
 -- specifies that the IEEE library will be used in this code.
@@ -113,4 +119,143 @@ architecture lecture0_arch of lecture0 is
         e <= d or c;
         f <= not e;
 end architecture lecture0_arch
+```
+
+#### __2. Data Types:__
+VHDL supports various data types for representing different kinds of information. These include standard types like integer, real, boolean, character, and time. Additionally, VHDL allows users to define their own custom data types using records or arrays.
+The STD_LOGIC and STD_LOGIC_VECTOR data types are not built-in VHDL data types, but are defined in the standard logic 1164 package of the IEEE library. We therefore need to include this library in our VHDL code and specify that the STD_LOGIC_1164 package must be used in order to use the STD_LOGIC data type.
+
+__BIT__
+
+The BIT data type can only have the value 0 or 1. When assigning a value of 0 or 1 to a BIT in VHDL code, the 0 or 1 must be enclosed in single quotes: '0' or '1'.
+
+__BIT_VECTOR__
+
+The BIT_VECTOR data type is the vector version of the BIT type consisting of two or more bits. Each bit in a BIT_VECTOR can only have the value 0 or 1. When assigning a value to a BIT_VECTOR, the value must be enclosed in double quotes, e.g. "1011" and the number of bits in the value must match the size of the BIT_VECTOR.
+
+__STD_LOGIC__
+
+The STD_LOGIC data type can have the value X, 0, 1 or Z. There are other values that this data type can have, but the other values are not synthesizable – i.e. they can not be used in VHDL code that will be implemented on a CPLD or FPGA.
+
+#### These values have the following meanings:
+- X – unknown
+- 0 – logic 0
+- 1 – logic 1
+- Z – high impedance (open circuit) / tristate buffer
+
+When assigning a value to a STD_LOGIC data type, the value must be enclosed in single quotes: 'X', '0', '1' or 'Z'.
+
+__STD_LOGIC_VECTOR__
+
+The vector version of the STD_LOGIC data type. Each bit in the set of bits that make up the vector can have the value X, 0, 1 or Z. When assigning a value to a STD_LOGIC_VECTOR type, the value must be enclosed in double quotes, e.g. "1010", "ZZZZ" or "ZZ001". The number of bits in the value must match the size of the STD_LOGIC_VECTOR.
+
+#### __3. Operators:__
+VHDL provides a wide range of operators for performing arithmetic operations (addition, subtraction, multiplication), logical operations (AND, OR), relational comparisons (equal to, less than), and bit-wise operations (shift left/right). These operators enable designers to manipulate data efficiently within their designs.
+Logical Operators
+- NOT, AND, NAND, OR, NOR, XOR and XNOR.
+
+__Arithmetic Operators__
+- \+ addition
+- \- subtraction
+- \* multiplication
+- / division
+- ABS absolute value
+- MOD modulus
+- REM remainder
+- ** exponent
+
+__Comparison Operators__
+- = equal to
+- /= not equal to
+- < less than
+- \> greater than
+- <= less than or equal to
+- \>= greater than or equal to
+
+__Shift Operators__
+- sll – shift left logical
+- srl – shift right logical
+- sla – shift left arithmetic
+- sra – shift right arithmetic
+- rol – rotate left
+- ror – rotate right
+
+The following operators can be used on the data types listed.
+
+#### Logical Operators
+Logical operators can operate on: (BIT and BIT_VECTOR) (STD_LOGIC and STD_LOGIC_VECTOR) (STD_ULOGIC and STD_ULOGIC_VECTOR)
+
+#### Arithmetic Operators
+The STD_LOGIC_VECTOR data type can be used in addition and subtraction operations (+ and -) if the STD_LOGIC_SIGNED or the STD_LOGIC_UNSIGNED package of the IEEE library is used.
+(Otherwise the arithmetic operators can only be used with INTEGER, SIGNED and UNSIGNED data types)
+
+#### Comparison Operators
+(BIT and BIT_VECTOR) (STD_LOGIC and STD_LOGIC_VECTOR) (STD_ULOGIC, STD_ULOGIC_VECTOR, INTEGER, SIGNED and UNSIGNED)
+
+#### Shift Operators
+Shift operators can only be used on BIT_VECTOR data types.
+
+#### __4. Control Structures:__
+Control structures in VHDL allow designers to control the flow of execution within their designs. The most commonly used control structures are if-then-else statements and case statements. These structures enable conditional branching based on certain conditions or values.
+
+#### I. Conditional Statements:
+Conditional statements are used to make decisions based on certain conditions. The most commonly used conditional statement in VHDL is the "if-then-else" statement. It allows designers to execute different sets of instructions based on whether a condition is true or false. For example:
+```vhdl
+if (condition1) then
+   -- execute these statements if condition1 is true
+elsif (condition2) then
+   -- execute these statements if condition2 is true
+else
+   -- execute these statements if all conditions are false
+end if;
+```
+
+The "case" statement is another type of conditional statement that allows designers to select one action from multiple alternatives based on the value of an expression.
+```vhdl
+signal S1 : INTEGER range 0 to 7;
+signal I1, I2, I3 : BIT ;
+process (S1, I1, I2, I3)
+begin
+    case S1 is
+        when 0 | 2 =>
+            OU <= ‘0’ ;
+        when 1 =>
+            OU <= I1 ;
+        when 3 to 5 =>
+            OU <= I2 ;
+        when others =>
+            OU <= I3 ;
+    end case ;
+end process ;
+```
+
+#### I. Loop Statements:
+Loop statements are used to repeat a set of instructions multiple times until a specific condition is met. The two main loop statements in VHDL are "for" and "while" loops.
+The "for" loop executes a set of instructions for a fixed number of iterations, as defined by the loop index variable. For example:
+``` vhdl
+for i in 0 to 10 loop
+   -- execute these statements for each iteration
+end loop;
+```
+
+The "while" loop executes a set of instructions repeatedly as long as a given condition remains true. For example:
+```vhdl
+while (condition) loop
+   -- execute these statements until condition becomes false
+end loop;
+```
+
+#### III. Sequential Statements:
+Sequential statements allow designers to specify the order in which certain actions should be executed. The most commonly used sequential statement in VHDL is the "wait" statement. It suspends the execution of a process until a specific condition is met, such as a certain amount of time has passed or an event occurs.
+```vhdl
+wait for 10 ns; -- suspend execution for 10 nanoseconds
+```
+
+Another important sequential statement is the "next" statement, which allows designers to skip the remaining statements within a loop and proceed to the next iteration.
+```vhdl
+l1 : while a < 10 loop
+    l2 : while b < 20 loop
+        next l1 when a = b ;
+    end loop l2 ;
+end loop l1 ;
 ```
